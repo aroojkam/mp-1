@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Centering the page*/
+#page-wrapper{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/*Header starts*/
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+    background-color: rgb(165, 42, 120);
+    color: rgb(255, 196, 218);
+}
+/*Header ends*/
+
+/*Two column container starts:*/
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: rgb(198, 52, 122);
+}
+
+nav{
+    width: 30%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(179, 48, 111);
+    font-size: calc(2px + 2vw);
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li{
+    font-size: calc(3px + 3vw);
+    width: 90%;
+    background-color:rgb(222, 135, 157);
+    padding: 2vh 0;
+    margin: 5vh auto;
+}
+
+
+nav a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    background-color: rgb(222, 135, 157);
+}
+
+
+main p{
+    margin: 0 1vw;
+    font-size: calc(2px + 2vw);
+}
+
+#profile-image{
+    max-width: 100%;
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2vh 2vw;
+}
+
+#main-text{
+    align-self: center;
+    width: 60%;
+    margin: 1vh 1vw;
+}
+
+#main-image{
+    width: 40%;
+    margin: 1vh 1vw;
+}
+
+#main-title{
+    margin: 2vw 0;
+    text-align: center;
+    font-size: calc(2px + 2vw);
+    color: rgb(128, 0, 85);
+}
+/*Two column container ends*/
+
+footer{
+    background-color: rgb(165, 42, 120);
+    color: rgb(255, 196, 218);
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#time-date{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+footer a{
+    color: rgb(255, 196, 218);
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        align-items: center;
+    }
+
+    #container{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(171, 46, 106);
+        list-style: none;
+        padding-left: 0;
+    }
+
+    nav li{
+        font-size: calc(2px + 1.5vw);
+        background-color:rgb(222, 135, 157);
+        padding: 1% .5%;
+        margin: 1% .5%;
+    }
+
+    nav a{
+        text-decoration: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: 100vh;
+        background-color: rgb(222, 135, 157);
+    }
+
+    main p{
+        margin: 2% 2%;
+        font-size: calc(2px + 3vw);
+    }
+
+    #profile-image{
+        max-width: 100%;
+    }
+
+    #main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main-text{
+        align-self: center;
+        width: 100%;
+        margin: 1vh 1vw;
+    }
+
+    #main-image{
+        margin: 1vh auto;
+    }
+
+    #main-title{
+        text-align: center;
+        color: rgb(128, 0, 85);
+    }
+}
+    /* Calculator Styling */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(241, 184, 234);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    margin: 20px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #f3a0ca;
+    border-radius: 5px;
+    font-size: calc(14px + 0.5vw);
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.button-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(128, 0, 85);
+    color: white;
+    font-size: calc(14px + 0.5vw);
+}
+
+.button-container button:hover {
+    background: rgb(128, 0, 85);
+    transform: scale(1.05);
+}
+
+.button-container button:active {
+    transform: scale(0.95);
+}
+
+#output {
+    margin-top: 15px;
+    font-size: calc(16px + 0.5vw);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+@media screen and (max-width: 480px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    .button-container button {
+        font-size: 14px;
+    }
+
+    #output {
+        font-size: 16px;
+    }
+}
+
+/* Spacing for list items and tables */
+ul li {
+    margin-bottom: 20px; /* Adds space between list items */
+}
+
+table {
+    margin-top: 20px; /* Adds space above tables */
+    margin-bottom: 30px; /* Adds space below tables */
+    border-collapse: collapse;
+    width: 80%; /* Set width to 80% for centering */
+    margin-left: auto; /* Auto margin for centering */
+    margin-right: auto; /* Auto margin for centering */
+}
+
+table th, table td {
+    padding: 15px; /* Increased padding for better spacing */
+    border: 1px solid #000;
+}
+
+/* Ensure spacing is responsive */
+@media screen and (max-width: 768px) {
+    ul li {
+        margin-bottom: 15px;
+    }
+    table {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        width: 90%; /* Slightly increase width for smaller screens */
+    }
+}

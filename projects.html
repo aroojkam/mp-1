@@ -1,0 +1,67 @@
+<!-- If you do have a Projects secHon in your
+resume, you may add your content to this page but please leave some space at the bo@om
+because we will add a JavaScript Calculator at the bo@om of this internal page, which should
+serve as a JS project.-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A website showcasing Arooj Kamran's Online Resume">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Projects | Resume</title>
+    </head>
+
+    <body>
+        <div id="page-wrapper">
+
+    <!--Header starts-->
+            <header>
+                <h1>Arooj Kamran</h1>
+                <p>My Online Resume</p>
+            </header>
+    <!--Header end-->
+
+            <div id="container">
+    <!--Navigation Start-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="employment.html">Employment</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="references.html">References</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </nav>
+    <!--Navigation End-->
+                <main>
+                    <!--Main Content start-->
+                    <div class="calculator">
+                        <h2>Calculator</h2>
+                        <div class="input-group">
+                            <input type="text" id="first-number" placeholder="Enter first number">
+                            <input type="text" id="second-number" placeholder="Enter second number">
+                        </div>
+                        <div class="button-container">
+                            <button onclick="addition()">+</button>
+                            <button onclick="subtraction()">-</button>
+                            <button onclick="multiplication()">*</button>
+                            <button onclick="division()">/</button>
+                            <button onclick="power()">^</button>
+                            <button onclick="clearFields()">Clear</button>
+                        </div>
+                        <h3 id="output"></h3>
+                    </div>                    
+                </main> 
+            </div>
+<!--Main Content End-->
+
+        <!--Footer start-->
+            <footer>
+                <p>All Rights Reserved by Arooj Kamran <a href="../credits/credits.html"> Credits</a> &copy;</p>
+            </footer>
+        <!--Footer End-->
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
